@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block contents %}
+<div style="margin-left: 50px;">
+    <form action="/signup" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="name"></input><br>
+        <input style="margin-left: 100px; margin-top: 10px;" type="submit" value="Signup"></input>
+      </form>
+</div>
+{% endblock %}
