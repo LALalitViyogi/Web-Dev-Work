@@ -25,5 +25,13 @@ def products():
 def projects():
     return render_template('project.html')
 
+@app.route('/skills')
+def skill():
+    return render_template('skills.html')
+
+@app.route('/assessments')
+def assess():
+    return render_template('assessments.html')
+
 if "__name__"=="__main__":
     app.run(debug=True)

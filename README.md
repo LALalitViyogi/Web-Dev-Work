@@ -1,2 +1,8 @@
 # basic-webdevelopment-project
-this is just simple testing project which is made for checking my capabilities
+This Project is dedicated for Site Of Viyogi Enterprise.
+
+Project is based on dynamically generation of web pages for front end.
+
+Libraries used:
+
+Flask,Request,Sqlite
