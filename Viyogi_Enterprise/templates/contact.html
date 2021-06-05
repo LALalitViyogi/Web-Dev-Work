@@ -1,9 +1,19 @@
 {% extends "index.html" %}
 {% block contents %}
-<div style="margin-left: 50px;">
-    <form action="/signup" method="post">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="name"></input><br>
+<div style="margin-left: 50px;margin-top: 50px;">
+  <h2 style="margin-left: 100px;font-family: sans-serif;">
+    Contact Us!
+  </h2>
+    <form action="/signup" method="post" style="margin-left: 100px;">
+      <div>
+        <label for="fname">First Name </label><br><br>
+        <input type="text" id="fname" name="fname" style="animation: cubic-bezier(0.165, 0.84, 0.44, 1);" placeholder=" Your First Name"></input>
+      </div>
+        
+      <div>
+        <label for="lname">Last Name </label><br><br>
+        <input type="text" id="lname" name="lname" placeholder=" Your Last Name"></input><br><br>
+      </div>
         <input style="margin-left: 100px; margin-top: 10px;" type="submit" value="Signup"></input>
       </form>
 </div>
