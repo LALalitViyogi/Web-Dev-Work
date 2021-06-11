@@ -13,8 +13,9 @@ def cont():
 
 @app.route('/signup', methods = ['POST'])
 def signup():
-    name = request.form['name']
-    print("The email address is '" + name + "'")
+    fname = request.form['fname']
+    lname = request.form['lname']
+    print("The Name is "+ str(fname)+ " "+str(lname))
     return redirect('/')
 
 @app.route('/product')
