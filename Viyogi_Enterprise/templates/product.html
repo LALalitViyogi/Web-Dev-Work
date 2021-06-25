@@ -1,5 +1,19 @@
 {% extends "index.html" %}
-{% block contents %}
-<p>this is product page</p>
-
+{% block link %}
+<link href="{{url_for('static',filename='css/product.css')}}" rel="stylesheet">
 {% endblock %}
+{% block contents %}
+{% set rowpoint = 4 %}
+{% for i in range(0,len,rowpoint) %}
+<div class="product-row">
+ {% for j in range(i,i+rowpoint)%}
+  <a href="{{links[j]}}" style="text-decoration: none; margin-left:50px; margin-right:50px; margin-top: 30px; background-color:rgb({{colors[j]}});">
+   <h3 style="padding:5px;width: 120px; text-align: center; background-color: cornsilk; margin: 50px;">{{products[j]}}</h3>
+   <img src="{{url_for('static', filename='img/'+imgs[j])}}" alt="{{products[j]}}" style=" margin-left:45px; margin-bottom:20px;height:110px; width:140px;">
+  </a>
+ {% endfor%}
+</div>
+<br>
+{% endfor %}
+
+{% endblock contents%}

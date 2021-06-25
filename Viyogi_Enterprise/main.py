@@ -1,7 +1,12 @@
 from logging import debug
 from flask import Flask,render_template, request, redirect
+from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.sql import text
+import json
 
 app = Flask(__name__)
+
+contact_us="contact_us.db"
 
 @app.route('/')
 def main():
@@ -13,14 +18,19 @@ def cont():
 
 @app.route('/signup', methods = ['POST'])
 def signup():
-    fname = request.form['fname']
-    lname = request.form['lname']
-    print("The Name is "+ str(fname)+ " "+str(lname))
-    return redirect('/')
+    name = request.form['name']
+    mail = request.form['email']
+    print("The Name is "+ str(name),end="\n")
+    print("And Email is "+ str(mail),end="\n")
+    return redirect('/product')
 
 @app.route('/product')
 def products():
-    return render_template('product.html')
+    img=["viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png"]
+    product=["Viyogi Notes","Adi Images","Covid Data","fourth","fivfth","sixth","seventh","eighth"]
+    link=["http://www.google.com/","http://www.github.com/","#","#","#","#","#","#"]
+    color=["255,138,101","255,202,40","102,187,106","41,182,246","240,98,146","159,168,218","76,175,80","197,225,165"]
+    return render_template('product.html',products=product,links=link,colors=color,imgs=img ,len=len(img))
 
 @app.route('/project')
 def projects():
