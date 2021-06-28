@@ -27,9 +27,9 @@ def signup():
 @app.route('/product')
 def products():
     img=["viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png"]
-    product=["Viyogi Notes","Adi Images","Covid Data","fourth","fivfth","sixth","seventh","eighth"]
+    product=["Viyogi Notes","Adi Images","Covid Data","Express-Calcy","Aditya Centre","V-Data Tool","seventh","eighth"]
     link=["http://www.google.com/","http://www.github.com/","#","#","#","#","#","#"]
-    color=["255,138,101","255,202,40","102,187,106","41,182,246","240,98,146","159,168,218","76,175,80","197,225,165"]
+    color=["255,138,101","255,202,40","102,187,106","41,182,246","240,98,146","159,168,218","60,150,85","197,225,165"]
     return render_template('product.html',products=product,links=link,colors=color,imgs=img ,len=len(img))
 
 @app.route('/project')
