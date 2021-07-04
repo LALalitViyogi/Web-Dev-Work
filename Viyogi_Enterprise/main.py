@@ -1,16 +1,15 @@
 from logging import debug
 from flask import Flask,render_template, request, redirect
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import text
+import sqlite3 as sql
 import json
 
 app = Flask(__name__)
 
-contact_us="contact_us.db"
-
+img=["viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png"]
+new_product=[2,3,5,7,6,1] ## indices of all product that should be on main page
 @app.route('/')
 def main():
-    return render_template('home.html')
+    return render_template('home.html',imgs=img,len=new_product)
 
 @app.route('/contact')
 def cont():
@@ -26,10 +25,10 @@ def signup():
 
 @app.route('/product')
 def products():
-    img=["viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png","viyogi_notes.png","adi_image_logo.png"]
-    product=["Viyogi Notes","Adi Images","Covid Data","Express-Calcy","Aditya Centre","V-Data Tool","seventh","eighth"]
+    
+    product=["Viyogi Notes","Adi Images","Covid Data","Express-Calcy","Aditya Centre","V-Data Tool","CheKaut","eighth"]
     link=["http://www.google.com/","http://www.github.com/","#","#","#","#","#","#"]
-    color=["255,138,101","255,202,40","102,187,106","41,182,246","240,98,146","159,168,218","60,150,85","197,225,165"]
+    color=["255,138,101","255,202,40","102,187,106","41,182,246","240,98,146","60,150,85","159,168,218","197,225,165"]
     return render_template('product.html',products=product,links=link,colors=color,imgs=img ,len=len(img))
 
 @app.route('/project')
