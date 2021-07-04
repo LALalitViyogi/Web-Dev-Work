@@ -1,11 +1,15 @@
 {% extends "index.html" %}
 
 {% block link%}
- <link href="css/home.css" rel="stylesheet">
 {% endblock %}
 {% block contents %}
-<p>this is working page</p>
-<div>
- <h4>hello, welcome to viyo 
-</div>
+<br>
+{% set image_num=4%}
+{# only image_num products will be on main page#}
+{% for j in range(image_num)%}
+ 	{% if image_num !=0%}
+  		<img src="{{url_for('static', filename='img/'+imgs[len[j]])}}" style="height: 200px; width: 330px;">
+		{% set image_num= image_num-1%}
+	 {%endif%}
+{% endfor %}
 {% endblock %}
