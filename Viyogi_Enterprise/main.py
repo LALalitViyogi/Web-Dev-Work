@@ -16,7 +16,7 @@ link=["http://www.google.com/","http://www.github.com/","#","https://facebook.co
 color=["255,138,101","255,202,40","102,187,106","41,182,246",
 "240,98,146","60,150,85","159,168,218","197,225,165"]
 
-main_page_product=[2,3,5,7,6,1]
+main_page_product=[2,3,1,5,6,4]
 
 def update(products):  ## indices of all product that should be on main page
     global img
@@ -57,7 +57,7 @@ def products():
 
 @app.route('/project')
 def projects():
-    return render_template('project.html')
+    return render_template('project.html',imgs=img,len=main_page_product,links=link, products=product,colors=color)
 
 @app.route('/skills')
 def skill():
