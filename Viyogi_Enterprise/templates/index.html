@@ -13,20 +13,20 @@
         <header style="background-color: rgb(120, 43, 184); height: 85px; z-index:1; ">
             <a href="{{url_for('main')}}"><h2 style="color: cornsilk;margin-left: 50px; padding:10px;height: 30px; width:220px;float:left;text-decoration: none;">Viyogi <span>/\\/</span> Enterprise</h2></a>
             <table style="float:right;padding:20px; color: cornsilk;margin-right:60px;">
-                <tr style="width: 200px;">
+                <tr style="width: 220px;">
                     <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('main')}}" style="color: cornsilk;padding:5px;text-decoration: none">Home</a></td>
                     <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('products')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Products</a></td>
-                    <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('cont')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Contact</a></td>
                     <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('projects')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Project</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('cont')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Contact</a></td>
                     <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('skill')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Skills</a></td>
-                    <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('assess')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Assessment</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('assess')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Assess</a></td>
+                    <td style="padding:10px;width: 60px;display:block;float: left;"><a href="{{url_for('logpage')}}" style="color: cornsilk;padding:5px;text-decoration: none;">Admin</a></td>
                 </tr>
             </table>
         </header>
         <hr>
         {% block contents %}
         {% endblock %}
-        <br>
         <hr>
         <footer>
             <div style="background-color: rgb(120, 43, 184); height: 60px;">
