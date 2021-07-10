@@ -1,8 +1,16 @@
-# basic-webdevelopment-project
-This Project is dedicated for Site Of Viyogi Enterprise.
+# Web-Dev-Work
 
-Project is based on dynamically generation of web pages for front end.
+It is basic site for Viyogi Enterprises.
+
+"Don't Learn To Work, Work To Learn"
+
+Features:
+dynamic,Data driven.
 
 Libraries used:
 
-Flask,Request,Sqlite
+Flask
+
+Languages Used:
+
+Python,Jinja, Javascript, Sql.
