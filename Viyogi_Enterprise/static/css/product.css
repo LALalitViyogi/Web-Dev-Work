@@ -1,6 +1,0 @@
-.product-row{
- display: flex;
-}
-.product-link:hover{
- transform: rotateY(180deg);
-}
