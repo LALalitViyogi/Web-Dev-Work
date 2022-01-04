@@ -1,0 +1,262 @@
+@media (max-width:660px)
+{
+    .header{
+        background-color: rgb(120,43,184);
+        width:100%;
+        height: 50px;
+        z-index: 1;
+        font-family: sans-serif;
+        
+    }
+    .header a,:link,:visited{
+        text-decoration:none;
+        text-align: center;
+    }
+    .header h2{
+        color: cornsilk;
+        text-align: center;
+        padding: 2%;
+        font-size:20px;
+        text-decoration: none;
+    }
+    .head-nav a:link,:visited{
+        text-decoration:none;
+        background-color: black;
+        color: azure;
+    }
+    .flex-container {
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 1%;
+    }
+    .flex-type1{
+        flex: 50%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+    .flex-type2{
+        flex: 50%;
+        height: 25px;
+        box-sizing: border-box;
+    }
+    .flex-container a:hover{
+        background-color: azure;
+        color: black;
+        font-weight: bold;
+    }
+    .footer{
+        background-color: rgb(120,43,184);
+        width:100%;
+        height: 30px;
+        z-index: 1;
+        font-family: sans-serif;
+    }
+    .footer a:link{
+        text-decoration: none;
+    }
+    .footer h3{
+        color: cornsilk;
+        padding-left: 2%;
+        margin: 1%;
+        font-size:15px;
+        text-decoration: none;
+        float:left;
+    }
+    .footer h4{
+        font-size: 15px;
+        margin: 1%;
+        color: cornsilk;
+        padding-right: 1%;
+        float: right;
+    }
+
+
+    .foot-nav a{
+        padding: 1%;
+        text-align: center;
+        font-size: 15px;
+        text-decoration:none;
+        background-color: rgb(184, 107, 247);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        
+    }
+    .foot-nav a:hover{
+        background-color: black;
+        color: cornsilk;
+        font-weight: bolder;
+    }
+    .foot-flex{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .fo-flex-type1,.fo-flex-type2{
+        flex:35%
+    }
+
+}
+@media (max-width:330px)
+{
+    .header{
+        background-color: rgb(120,43,184);
+        width:100%;
+        height: 50px;
+        z-index: 1;
+        font-family: sans-serif;
+        
+    }
+    .header a:link,:visited{
+        text-decoration:none;
+    }
+    .header h2{
+        color: cornsilk;
+        text-align: center;
+        padding: 3%;
+        font-size:15px;
+        text-decoration: none;
+    }
+    .flex-container {
+        background-color: black;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 1%;
+        margin: 1%;
+    }
+    .flex-type1{
+        flex: 100%;
+        height: 25px;
+    }
+    .flex-type2{
+        flex: 100%;
+        height: 25px;
+    }
+    .footer{
+        background-color: rgb(120,43,184);
+        width:100%;
+        height: 20px;
+        z-index: 1;
+        font-family: sans-serif;
+    }
+    .footer h3{
+        color: cornsilk;
+        padding-left: 2%;
+        margin: 1%;
+        font-size:10px;
+        text-decoration: none;
+        float:left;
+    }
+    .footer h4{
+        font-size: 10px;
+        margin: 1%;
+        color: cornsilk;
+        padding-right: 1%;
+        float: right;
+    }
+    .fo-flex-type1,.fo-flex-type2{
+        flex:50%
+    }
+}
+@media (min-width:661px)
+{
+    .header{
+        background-color: rgb(120,43,184);
+        width:100%;
+        height: 85px;
+        z-index: 1;
+        font-family: sans-serif;
+        
+    }
+    .header a:link,:visited{
+        text-decoration:none;
+    }
+    .header h2{
+        color: cornsilk;
+        text-align: center;
+        padding: 2%;
+        font-size:25px;
+        text-decoration: none;
+    }
+    .head-nav a{
+        padding: 1%;
+        text-align: center;
+    }
+    .head-nav a:hover{
+        background-color: azure;
+        color: black;
+        font-weight: bold;
+    }
+    .head-nav a:link,:visited{
+        text-decoration:none;
+        background-color: black;
+        color: azure;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .flex-type1{
+        flex: 10%;
+    }
+    .flex-type2{
+        flex: 10%;
+    }
+    .footer{
+        background-color: rgb(120,43,184);
+        width:100%;
+        height: 50px;
+        z-index: 1;
+        font-family: sans-serif;
+    }
+    .footer a:link{
+        text-decoration: none;
+    }
+    .footer h3{
+        color: cornsilk;
+        padding-left: 2%;
+        margin: 1%;
+        font-size:20px;
+        text-decoration: none;
+        float:left;
+    }
+    .footer h4{
+        margin: 1%;
+        color: cornsilk;
+        padding-right: 1%;
+        float: right;
+    }
+
+    .foot-nav a{
+        padding: 1%;
+        text-align: center;
+        font-size: 15px;
+        text-decoration:none;
+        background-color: rgb(184, 107, 247);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        
+    }
+    .foot-nav a:hover{
+        background-color: black;
+        color: cornsilk;
+        font-weight: bolder;
+    }
+    .foot-flex{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .fo-flex-type1,.fo-flex-type2{
+        flex:8%
+    }
+
+}
