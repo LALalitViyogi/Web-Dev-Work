@@ -14,3 +14,7 @@ Flask
 Languages Used:
 
 Python,Jinja, Javascript, Sql.
+
+Responsive Web Pages --------------------------------
+
+Max-width :660 px, Min-width:661px, Max-width :330px;
